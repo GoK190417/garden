@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>蛍火 — hotarubi</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="c"></canvas>
+
+<div class="title">蛍火<small>ほたるび · indigo 01</small></div>
+<div id="hint"></div>
+
+<div class="fabs">
+  <button class="fab" id="bTune" aria-label="調整">調</button>
+  <button class="fab" id="bReset" aria-label="やりなおす">↺</button>
+  <button class="fab" id="bShot" aria-label="写真にする">写</button>
+</div>
+
+<div id="panel">
+  <label>ほたる</label>
+  <input type="range" id="sCount" min="8" max="90" step="1" value="26">
+  <label>ひかり</label>
+  <input type="range" id="sGlow" min="40" max="160" step="1" value="100">
+  <label>はにかみ</label>
+  <input type="range" id="sShy" min="60" max="240" step="1" value="140">
+  <label>またたき</label>
+  <input type="range" id="sBlink" min="1.5" max="4.5" step="0.1" value="3">
+  <div class="cap"><span>← 西のほたる</span><span>東のほたる →</span></div>
+</div>
+
+<div id="shot">
+  <img id="shotImg" alt="蛍火の写真">
+  <p>ながおしで保存できます</p>
+  <button id="bClose">とじる</button>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
